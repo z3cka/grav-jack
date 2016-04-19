@@ -17,6 +17,7 @@ RUN ln -s /usr/share/nginx/html/user /usr/share/nginx/grav-jack/user
 # chown mah stuff!!
 RUN chown -R www-data:www-data /usr/share/nginx/grav-jack
 RUN chmod -R 775 /usr/share/nginx/grav-jack
+RUN chmod +x /usr/share/nginx/html/bin/*
 
 # Grav install!
 RUN cd /usr/share/nginx/html && ./bin/grav install
