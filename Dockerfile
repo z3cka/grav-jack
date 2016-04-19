@@ -9,7 +9,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN curl https://github.com/z3cka.keys -o /root/.ssh/authorized_keys
 
 # Grab mah source!
-RUN git clone git@github.com:z3cka/grav-jack.git /usr/share/nginx/grav-jack
+RUN git clone https://github.com/z3cka/grav-jack.git /usr/share/nginx/grav-jack
 
 # Link mah user dir!
 RUN ln -s /usr/share/nginx/html/user /usr/share/nginx/grav-jack/user
